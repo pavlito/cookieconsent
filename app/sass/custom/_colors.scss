@@ -1,0 +1,94 @@
+
+$white:    #fff;
+$gray-100: #F6FCFF;
+$gray-200: #e9ecef;
+$gray-300: #DBDBDB;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #92879F;
+$gray-700: #495057;
+$gray-800: #394285;
+$gray-900: #394285;
+$black:    #000;
+
+
+$footer-bg:        #394285;
+$footer-border:    #fff;
+
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #0CB0D9;
+$indigo:  #6F0EE6;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+$brown:   #E36049;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "brown":      $brown,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $brown;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variabl
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "brown":      $brown,
+    "dark":       $dark
+  ),
+  $theme-colors
+);

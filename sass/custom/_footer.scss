@@ -1,0 +1,17 @@
+
+footer {
+	width:100%;
+	background: $footer-bg;
+	bottom:0;
+	padding-top:$footer-padding-y;
+	background-image:url('/assets/images/pattern.png');
+	background-repeat: repeat;
+
+}
+
+.top-footer,
+.middle-footer,
+.bottom-footer {
+	padding:$footer-padding-y 0;
+}
+

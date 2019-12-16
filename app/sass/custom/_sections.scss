@@ -1,0 +1,55 @@
+html,body,.wrapper {
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.sect-preview {
+    position: relative;
+    a {
+        color:$body-color;
+    }
+}
+
+.preview {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: $preview-heading-margin;
+    }
+
+    .highlight {
+        padding: $preview-padding;
+        background: $preview-bg;
+        color: d $preview-color;
+    }
+}
+
+.download-container {
+    a {
+        color:$body-color;
+        font-weight: $font-weight-normal;
+    }
+}
+
+.sect-live {
+    @extend .preview;
+}
+
+.blog-container {
+    @extend .preview;
+
+    h1:first-child {
+        margin-top: 0;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+}

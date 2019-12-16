@@ -1,0 +1,18 @@
+.navbar-nav {
+    .nav-link {
+        padding-right: $nav-link-padding-x;
+        padding-left: $nav-link-padding-x;
+    }
+}
+
+.logo {
+	height: $logo-height;
+}
+
+
+
+@include media-breakpoint-down(md) {
+    .logo {
+    	height: $logo-height/1.4;
+    }
+}

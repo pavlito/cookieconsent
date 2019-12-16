@@ -1,0 +1,45 @@
+
+
+blockquote {
+    padding-left:2rem;
+    border-left:6px solid rgba($primary,0.2);
+    margin:6rem 0 !important;
+    font-size: $font-size-base !important;
+    font-style: italic;
+    
+    &.bg-warning {
+        background-color: rgba($warning, 0.12) !important;
+    }
+}
+
+a {
+    color: $primary;
+    font-weight: $font-weight-bold;
+}
+
+.blog-container {
+    a {
+        color: $primary;
+    }
+}
+
+.wrapper {
+    // position: relative;
+    // padding-bottom: 2rem;
+}
+
+.sect-about {
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+
+            &:before {
+                content: "\2022";
+                color: $primary;
+                padding-right: $spacer;
+            }
+        }
+    }
+}
