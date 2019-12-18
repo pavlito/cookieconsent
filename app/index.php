@@ -73,7 +73,7 @@
 											<span class="card-title mb-1 h5 d-block">Step 1</span>
 											<span class="card-title mb-0 h6 d-block">Choose your compliance preference</span>
 										</span>
-										<span class="mb-0 h5"><i class="d-inline-block pp-chevron-down"></i></span>
+										<span class="mb-0 h5"><i class="d-inline-block ppicon chevron-down"></i></span>
 									</a>
 									<div class="card-body collapse show" id="card1">
 										<div class="d-flex flex-column flex-sm-row">
@@ -112,7 +112,7 @@
 											<span class="card-title mb-1 h5 d-block">Step 2</span>
 											<span class="card-title mb-0 h6 d-block">Customize your Cookie Consent</span>
 										</span>
-										<span class="mb-0 h5"><i class="d-inline-block pp-chevron-down"></i></span>
+										<span class="mb-0 h5"><i class="d-inline-block ppicon chevron-down"></i></span>
 									</a>
 									<div class="card-body collapse show" id="card2">
 										<div class="form-group sub_selector">
@@ -208,7 +208,7 @@
 										</div>
 										<div class="form-group sub_selector">
 											<label for="change_settings_button">Enter the button to open the Preference Center (DOM Selector)
-												<a href="#" data-toggle="tooltip" title="IDs, classes, tag names can be used as a DOM selector: #changePreferences"><i class="ppicon pp-question-circle "></i>?</a>
+												<a href="#" data-toggle="tooltip" title="IDs, classes, tag names can be used as a DOM selector: #changePreferences"><i class="ppicon question-circle "></i></a>
 												<small class="d-block">Users should be able to change their preferences. Include a link/button anywhere on your page so that users can open the Cookies Preferences Center:</small>
 											</label>
 											<input type="text" class="form-control" id="change_settings_button" aria-describedby="change_settings_button" placeholder="#changePreferences">
@@ -237,7 +237,7 @@
 											<span class="card-title mb-1 h5 d-block">Step 3</span>
 											<span class="card-title mb-0 h6 d-block">Add your JavaScript scripts</span>
 										</span>
-										<span class="mb-0 h5"><i class="d-inline-block pp-chevron-down"></i></span>
+										<span class="mb-0 h5"><i class="d-inline-block ppicon chevron-down"></i></span>
 									</a>
 									<div class="card-body collapse show sub_selector" id="card3">
 										<p>Enter a name for the script (ie. Google Analytics), select the cookie consent level (ie. Tracking) and copy-paste the script code.</p>
@@ -289,7 +289,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="script_code">{{ _t('cookie_consent.copy_paste_script') }}</label>
+											<label for="script_code">You're done. Copy your Cookie Consent code below.</label>
 											<textarea class="form-control" name="script_code" id="script_code" rows="6" placeholder="&#x3C;script async src=&#x22;https://www.googletagmanager.com/gtag/js?id=ID&#x22;&#x3E;&#x3C;/script&#x3E;&#x3C;script&#x3E;window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag(&#x22;js&#x22;, new Date());gtag(&#x22;config&#x22;, &#x22;ID&#x22;);&#x3C;/script&#x3E;"></textarea>
 											<button class="mt-2 d-block d-sm-inline-block btn btn-outline-primary" id="addUserScript">Add this script</button>
 											<span class=" mt-2 text-danger d-block" id="code_invalid_error"></span>
@@ -304,7 +304,7 @@
 											<span class="card-title mb-1 h5 d-block">Step 4</span>
 											<span class="card-title mb-0 h6 d-block">Copy your Cookie Consent code</span>
 										</span>
-										<span class="mb-0 h5"><i class="d-inline-block pp-chevron-down"></i></span>
+										<span class="mb-0 h5"><i class="d-inline-block ppicon chevron-down"></i></span>
 									</a>
 									<div class="card-body collapse show" id="card4">
 										<p>You're done. Copy your Cookie Consent code below.</p>
@@ -339,7 +339,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#previewConsent">Preview Consent Bar</a>
+								<a href="#" class="btn btn-primary  btn-block small" data-toggle="modal" data-target="#previewConsent">Preview Consent Bar</a>
 							</div>
 						</div>
 					</div>
@@ -349,7 +349,7 @@
 					<div class="modal-dialog modal-xl modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">{{ _t('cookie_consent.preview_cookie_consent') }}</h5>
+								<h5 class="modal-title" id="exampleModalLabel">Preview Cookie Consent</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 								</button>
@@ -430,8 +430,32 @@
 			
 			<!-- footer -->
 			<?php include('_footer.php'); ?>
+			
 		</div>
-		
+		<script type="text/javascript">
+
+
+	      $('#user-code-copy-button').on('click', function() {
+	        new Clipboard('#user-code-copy-button', {
+	            text: function(trigger) {
+	                return document.getElementById('user_code').value;
+	            }
+	        });
+	      });
+
+	      $('#user_code').on('click', function() {
+	          $(this).focus();
+	          $(this).select();
+
+	          new Clipboard('#user_code', {
+	            text: function(trigger) {
+	                return document.getElementById('user_code').value;
+	            }
+	          });
+	      });
+
+	 
+	  </script>
 		
 		
 	</body>

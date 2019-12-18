@@ -37,4 +37,13 @@
 	</div>
 </footer>
 <script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
+<script src="/assets/js/popper.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/website-shared.js" type="text/javascript"></script>
+
+<?php
+	include('_trailer.php');
+?>
+
+<script type="text/javascript" src="/assets/js/cookie-consent-builder.min.js"></script>
+<script type="text/javascript" src="/assets/js/clipboard.min.js"></script>

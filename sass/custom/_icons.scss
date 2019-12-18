@@ -8,7 +8,7 @@ Generated using nucleoapp.com
     background-repeat: no-repeat;
 }
 
-.ppicon-cookie-consent {
+.ppicon {
     background-image: url("/assets/images/icons.svg");
 }
 
@@ -72,86 +72,98 @@ Generated using nucleoapp.com
     }
 }
 
-.ppicon.interstitial-dialog {
+.ppicon.chevron-down {
     background-position: -0px 0px;
+    height: 11px;
+    width: 20px;
+}
+
+.ppicon.question-circle {
+    background-position: -20px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.ppicon.palette-dark {
+    background-position: -36px 0px;
+    height: 30px;
+    width: 30px;
+}
+
+.ppicon.interstitial-dialog {
+    background-position: -66px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.interstitial-standalone-hover {
-    background-position: -89px 0px;
+    background-position: -155px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.interstitial-standalone {
-    background-position: -178px 0px;
+    background-position: -244px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.interstitial-dialog-hover {
-    background-position: -267px 0px;
+    background-position: -333px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.headline-dialog-hover {
-    background-position: -356px 0px;
+    background-position: -422px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.headline-dialog {
-    background-position: -445px 0px;
+    background-position: -511px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.gdpr-directive-hover {
-    background-position: -534px 0px;
+    background-position: -600px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.gdpr-directive {
-    background-position: -623px 0px;
+    background-position: -689px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.eprivacy-directive-hover {
-    background-position: -712px 0px;
+    background-position: -778px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.eprivacy-directive {
-    background-position: -801px 0px;
+    background-position: -867px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.simple-dialog-hover {
-    background-position: -890px 0px;
+    background-position: -956px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.simple-dialog {
-    background-position: -979px 0px;
+    background-position: -1045px 0px;
     height: 62px;
     width: 89px;
 }
 
 .ppicon.palette-light {
-    background-position: -1068px 0px;
-    height: 30px;
-    width: 30px;
-}
-
-.ppicon.palette-dark {
-    background-position: -1098px 0px;
+    background-position: -1134px 0px;
     height: 30px;
     width: 30px;
 } 
