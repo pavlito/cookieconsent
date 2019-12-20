@@ -1,18 +1,4 @@
 <footer>
-	<div class="top-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4 class="text-white">Products</h4>
-					<div class="d-flex flex-column flex-lg-row">
-						<a href="/privacy-policy-generator/" class="text-white mr-3">Privacy Policy Generator</a>
-						<a href="/terms-conditions-generator/" class="text-white mr-3">Terms & Conditions Generator</a>
-						<a href="/disclaimer-generator/" class="text-white">Disclaimer Generator</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="middle-footer">
 		<div class="container">
 			<div class="row">
@@ -23,27 +9,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="bottom-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<p class="small text-white">Please read our<a href="/privacy-policy/" class="text-white font-weight-bold"> Privacy Policy</a> and our <a href="/terms-of-service/" class="text-white font-weight-bold">Terms of Service</a></p>
-				</div>
-				<div class="col-lg-6 justify-content-lg-end d-flex">
-					<p class="small text-white"><a href="/" class="text-white font-weight-bold">Cookie Consent</a> &copy; 2019-<?php echo date('Y'); ?></p>
-				</div>
-			</div>
-		</div>
-	</div>
 </footer>
+
 <script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
-<script src="/assets/js/popper.min.js" type="text/javascript"></script>
+<!-- <script src="/assets/js/popper.min.js" type="text/javascript"></script> -->
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- 
 <script src="/assets/js/website-shared.js" type="text/javascript"></script>
 
-<?php
-	include('_trailer.php');
-?>
-
 <script type="text/javascript" src="/assets/js/cookie-consent-builder.min.js"></script>
-<script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/assets/js/clipboard.min.js"></script> -->

@@ -97,7 +97,7 @@
 														<!-- <span class="icon icon-comp-2"></span> -->
 														<span class="flex-shrink-0 ppicon ppicon-cookie-consent gdpr-directive"></span>
 														<div class="d-flex flex-column ml-3 ml-sm-0">
-															<span class="h6 mb-0 mb-sm-1 mt-2 ml-0 ml-sm-3 ml-sm-0">GDPR + ePrivacy Directive</span>
+															<span class="h6 mb-0 mb-sm-1 mt-2 ml-0 ml-sm-3 ml-sm-0">GDPRtest + ePrivacy Directive</span>
 															<small class="d-block">Your JavaScript scripts will be loaded only after the user clicks "I agree".</small>
 														</div>
 													</span>

@@ -4,6 +4,9 @@ footer {
 	background: $footer-bg;
 	bottom:0;
 	padding-top:$footer-padding-y;
+	background-image:url('/assets/images/pattern.png');
+	background-repeat: repeat;
+
 }
 
 .top-footer,

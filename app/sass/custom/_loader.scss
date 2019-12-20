@@ -1,21 +1,41 @@
 .loader-03 {
-  display:inline-block;
-  width: 0;
-  height:0;
-  margin-top:3rem;
-  border-left: 2rem solid transparent;
-  border-right: 2rem solid transparent;
-  border-bottom: 2rem solid $primary;
-  border-top: 2rem solid $blue;
-   -webkit-animation: loader5 1.2s ease-in-out infinite alternate;
-   animation: loader5 1.2s ease-in-out infinite alternate;
+  display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none;
+  position: relative;
+  margin-top:2rem;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $primary;
+    left: 1.5rem;
+    right: 0;
+    top: 0;
+    bottom: 1.5rem;
+    box-shadow: -1.5em 0 0 $primary;
+    animation: loader-12 1s linear infinite;
+  }
+  &:after {
+    top: 50%;
+    bottom: 0;
+    animation-delay: .25s;
+  }
 }
 
-@keyframes loader5 {
-   from {transform: rotate(0deg);}
-   to {transform: rotate(720deg);}
+@keyframes loader-12 {
+  0%,
+  100% {
+    box-shadow: -1.5em 0 0 transparent;
+    background-color: $primary;
+  }
+  50% {
+    box-shadow: -1.5em 0 0 $primary;
+    background-color: transparent;
+  }
 }
-@-webkit-keyframes loader5 {
-   from {-webkit-transform: rotate(0deg);}
-   to {-webkit-transform: rotate(720deg);}
-}
+

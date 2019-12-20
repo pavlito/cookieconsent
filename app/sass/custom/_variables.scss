@@ -36,15 +36,17 @@ $line-height-base:            2;
 // Size
 
 $font-size-base:              1rem;
-$h6-font-size:                $font-size-base*1.125;
+// $h6-font-size:                $font-size-base*1.125;
 $display4-size:               3.625rem;
 $display4-weight:             $font-weight-bold;
-
+$small-font-size:             70%;
 // Heading
 
 $headings-font-weight:        $font-weight-bold;
 $headings-color:              $gray-900;
 $headings-line-height:        1.4;
+
+
 
 // Shadow 
 
@@ -85,7 +87,8 @@ $hr-border-color:             $border-color;
 $box-shadow-sm:               0 .125rem 0.5rem rgba($dark, .1);
 $box-shadow:                  0 .125rem 1.875rem rgba($black, .1);
 $box-shadow-lg:               0 1rem 3rem rgba($dark, .175);
-$btn-shadow:                  0 .125rem 1.25rem rgba($primary, 0.4);
+$btn-shadow:                  0 .1875rem 1.3rem rgba($primary, 0.4);
+$box-shadow-none:             none;
 
 
 /////////////////////////////
@@ -109,7 +112,7 @@ $navbar-padding-y:                  $spacer;
 $nav-link-padding-y:                $input-btn-padding-y;
 $navbar-nav-link-padding-x:         1.8rem;
 $navbar-light-toggler-border-color: transparent;
-$logo-height:                       50px;
+$logo-height:                       30px;
 
 
 /////////////////////////////
@@ -186,5 +189,23 @@ $input-color:                               $gray-900;
 /////////////////////////////
 
 
-$alert-bg-level:                    -11;
+$alert-bg-level:                    -11.7;
 $alert-border-width:                0;
+
+
+
+
+/////////////////////////////
+// == Selectable
+/////////////////////////////
+
+
+$selectable-border-width:               2px;
+$selectable-border-hover-color:         $primary;
+$selectable-active-bg:                  lighten($primary, 68%);
+$selectable-active-color:               $selectable-border-hover-color;
+$selectable-color:                      $headings-color;
+$selectable-border-color:               $border-color;
+$selectable-spacer-y:                   0.4rem;
+$selectable-icon-width:                 5.5rem;
+$selectable-icon-height:                4.5rem;

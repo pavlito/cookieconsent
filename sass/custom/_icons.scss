@@ -39,6 +39,14 @@ Generated using nucleoapp.com
                 &.interstitial-standalone {
                     @extend .interstitial-standalone-hover;
                 }
+
+                &.palette-light {
+                    @extend .palette-light-hover;
+                }
+
+                &.palette-dark {
+                    @extend .palette-dark-hover;
+                }
             }
         }
     }
@@ -68,110 +76,128 @@ Generated using nucleoapp.com
             &.interstitial-standalone {
                 @extend .interstitial-standalone-hover;
             }
+
+            &.palette-light {
+                @extend .palette-light-hover;
+            }
+
+            &.palette-dark {
+                @extend .palette-dark-hover;
+            }
         }
     }
 }
 
-.ppicon.chevron-down {
+.ppicon.palette-dark-hover {
     background-position: -0px 0px;
+    height: 31px;
+    width: 31px;
+}
+
+.ppicon.palette-light-hover {
+    background-position: -31px 0px;
+    height: 31px;
+    width: 31px;
+}
+
+.ppicon.eprivacy-directive-hover {
+    background-position: -62px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.chevron-down {
+    background-position: -153px 0px;
     height: 11px;
     width: 20px;
 }
 
+.ppicon.headline-dialog {
+    background-position: -173px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.simple-dialog {
+    background-position: -264px 0px;
+    height: 64px;
+    width: 91px;
+}
+
 .ppicon.question-circle {
-    background-position: -20px 0px;
+    background-position: -355px 0px;
     height: 16px;
     width: 16px;
 }
 
-.ppicon.palette-dark {
-    background-position: -36px 0px;
-    height: 30px;
-    width: 30px;
+.ppicon.palette-light {
+    background-position: -371px 0px;
+    height: 31px;
+    width: 31px;
 }
 
-.ppicon.interstitial-dialog {
-    background-position: -66px 0px;
-    height: 62px;
-    width: 89px;
+.ppicon.palette-dark {
+    background-position: -402px 0px;
+    height: 31px;
+    width: 31px;
 }
 
 .ppicon.interstitial-standalone-hover {
-    background-position: -155px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -433px 0px;
+    height: 64px;
+    width: 91px;
 }
 
 .ppicon.interstitial-standalone {
-    background-position: -244px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -524px 0px;
+    height: 64px;
+    width: 91px;
 }
 
 .ppicon.interstitial-dialog-hover {
-    background-position: -333px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -615px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.interstitial-dialog {
+    background-position: -706px 0px;
+    height: 64px;
+    width: 91px;
 }
 
 .ppicon.headline-dialog-hover {
-    background-position: -422px 0px;
-    height: 62px;
-    width: 89px;
-}
-
-.ppicon.headline-dialog {
-    background-position: -511px 0px;
-    height: 62px;
-    width: 89px;
-}
-
-.ppicon.gdpr-directive-hover {
-    background-position: -600px 0px;
-    height: 62px;
-    width: 89px;
-}
-
-.ppicon.gdpr-directive {
-    background-position: -689px 0px;
-    height: 62px;
-    width: 89px;
-}
-
-.ppicon.eprivacy-directive-hover {
-    background-position: -778px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -797px 0px;
+    height: 64px;
+    width: 91px;
 }
 
 .ppicon.eprivacy-directive {
-    background-position: -867px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -888px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.gdpr-directive-hover {
+    background-position: -979px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.gdpr-directive {
+    background-position: -1070px 0px;
+    height: 64px;
+    width: 91px;
 }
 
 .ppicon.simple-dialog-hover {
-    background-position: -956px 0px;
-    height: 62px;
-    width: 89px;
+    background-position: -1161px 0px;
+    height: 64px;
+    width: 91px;
 }
-
-.ppicon.simple-dialog {
-    background-position: -1045px 0px;
-    height: 62px;
-    width: 89px;
-}
-
-.ppicon.palette-light {
-    background-position: -1134px 0px;
-    height: 30px;
-    width: 30px;
-} 
 
 .browser-controls {
     width: 4rem;
 }
-
-
 
 ////////////////////////////////////////////
