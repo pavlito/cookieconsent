@@ -11,11 +11,23 @@
 	</div>
 </footer>
 
-<script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
-<!-- <script src="/assets/js/popper.min.js" type="text/javascript"></script> -->
+<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/popper.min.js" type="text/javascript"></script>
 <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-<!-- 
+
 <script src="/assets/js/website-shared.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="/assets/js/cookie-consent-builder.min.js"></script>
-<script type="text/javascript" src="/assets/js/clipboard.min.js"></script> -->
+<script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/assets/js/notify.min.js" ></script>
+
+<script>
+	 $('#user-code-copy-button').on('click', function(e) {
+	        new Clipboard('#user-code-copy-button', {
+	            text: function(trigger) {
+	                return document.getElementById('user_code').value;
+	            }
+	        });
+	        $.notify('Copied to clipboard. You can paste your generated policy now (Control+V or CMD+V or right-click > Paste).', 'branded');
+	    });
+</script>

@@ -309,7 +309,7 @@
 									<div class="card-body collapse show" id="card4">
 										<p>You're done. Copy your Cookie Consent code below.</p>
 										<div class="form-group">
-											<textarea disabled name="user_code" id="user_code" rows="15" cols="90" class="form-control"></textarea>
+											<textarea disabled name="user_code" id="user_code" rows="15" cols="90" class="form-control" value="1234"></textarea>
 											<button id="user-code-copy-button" class="btn btn-outline-primary mt-2 copy-button" data-clipboard-target><i class="icon-copy"></i>Copy Cookie Consent code</button>
 										</div>
 									</div>
@@ -432,31 +432,5 @@
 			<?php include('_footer.php'); ?>
 			
 		</div>
-		<script type="text/javascript">
-
-
-	      $('#user-code-copy-button').on('click', function() {
-	        new Clipboard('#user-code-copy-button', {
-	            text: function(trigger) {
-	                return document.getElementById('user_code').value;
-	            }
-	        });
-	      });
-
-	      $('#user_code').on('click', function() {
-	          $(this).focus();
-	          $(this).select();
-
-	          new Clipboard('#user_code', {
-	            text: function(trigger) {
-	                return document.getElementById('user_code').value;
-	            }
-	          });
-	      });
-
-	 
-	  </script>
-		
-		
 	</body>
 </html>
