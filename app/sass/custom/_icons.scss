@@ -12,96 +12,186 @@ Generated using nucleoapp.com
     background-image: url("/assets/images/icons.svg");
 }
 
-.ppicon.interstitial-dialog {
+.selectable {
+    label {
+        &:hover {
+            .ppicon {
+                &.eprivacy-directive {
+                    @extend .eprivacy-directive-hover;
+                }
+
+                &.gdpr-directive {
+                    @extend .gdpr-directive-hover;
+                }
+
+                &.simple-dialog {
+                    @extend .simple-dialog-hover;
+                }
+
+                &.headline-dialog {
+                    @extend .headline-dialog-hover;
+                }
+
+                &.interstitial-dialog {
+                    @extend .interstitial-dialog-hover;
+                }
+
+                &.interstitial-standalone {
+                    @extend .interstitial-standalone-hover;
+                }
+
+                &.palette-light {
+                    @extend .palette-light-hover;
+                }
+
+                &.palette-dark {
+                    @extend .palette-dark-hover;
+                }
+            }
+        }
+    }
+
+    input:checked + label {
+        .ppicon {
+            &.eprivacy-directive {
+                @extend .eprivacy-directive-hover;
+            }
+
+            &.gdpr-directive {
+                @extend .gdpr-directive-hover;
+            }
+
+            &.simple-dialog {
+                @extend .simple-dialog-hover;
+            }
+
+            &.headline-dialog {
+                @extend .headline-dialog-hover;
+            }
+
+            &.interstitial-dialog {
+                @extend .interstitial-dialog-hover;
+            }
+
+            &.interstitial-standalone {
+                @extend .interstitial-standalone-hover;
+            }
+
+            &.palette-light {
+                @extend .palette-light-hover;
+            }
+
+            &.palette-dark {
+                @extend .palette-dark-hover;
+            }
+        }
+    }
+}
+
+.ppicon.palette-dark-hover {
     background-position: -0px 0px;
+    height: 31px;
+    width: 31px;
+}
+
+.ppicon.palette-light-hover {
+    background-position: -31px 0px;
+    height: 31px;
+    width: 31px;
+}
+
+.ppicon.eprivacy-directive-hover {
+    background-position: -62px 0px;
     height: 64px;
     width: 91px;
 }
 
 .ppicon.chevron-down {
-    background-position: -91px 0px;
+    background-position: -153px 0px;
     height: 11px;
     width: 20px;
 }
 
-body {
-    background: red;
-}
-
-.ppicon.gdpr-directive-hover {
-    background-position: -111px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.interstitial-standalone-hover {
-    background-position: -202px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.headline-dialog-hover {
-    background-position: -293px 0px;
-    height: 64px;
-    width: 91px;
-}
-
 .ppicon.headline-dialog {
-    background-position: -384px 0px;
+    background-position: -173px 0px;
     height: 64px;
     width: 91px;
 }
 
-.ppicon.palette-dark {
-    background-position: -475px 0px;
-    height: 31px;
-    width: 31px;
-}
-
-.ppicon.gdpr-directive {
-    background-position: -506px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.eprivacy-directive-hover {
-    background-position: -597px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.eprivacy-directive {
-    background-position: -688px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.interstitial-standalone {
-    background-position: -779px 0px;
-    height: 64px;
-    width: 91px;
-}
-
-.ppicon.simple-dialog-hover {
-    background-position: -870px 0px;
+.ppicon.simple-dialog {
+    background-position: -264px 0px;
     height: 64px;
     width: 91px;
 }
 
 .ppicon.question-circle {
-    background-position: -961px 0px;
+    background-position: -355px 0px;
     height: 16px;
     width: 16px;
 }
 
 .ppicon.palette-light {
-    background-position: -977px 0px;
+    background-position: -371px 0px;
     height: 31px;
     width: 31px;
 }
 
+.ppicon.palette-dark {
+    background-position: -402px 0px;
+    height: 31px;
+    width: 31px;
+}
+
+.ppicon.interstitial-standalone-hover {
+    background-position: -433px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.interstitial-standalone {
+    background-position: -524px 0px;
+    height: 64px;
+    width: 91px;
+}
+
 .ppicon.interstitial-dialog-hover {
-    background-position: -1008px 0px;
+    background-position: -615px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.interstitial-dialog {
+    background-position: -706px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.headline-dialog-hover {
+    background-position: -797px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.eprivacy-directive {
+    background-position: -888px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.gdpr-directive-hover {
+    background-position: -979px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.gdpr-directive {
+    background-position: -1070px 0px;
+    height: 64px;
+    width: 91px;
+}
+
+.ppicon.simple-dialog-hover {
+    background-position: -1161px 0px;
     height: 64px;
     width: 91px;
 }
